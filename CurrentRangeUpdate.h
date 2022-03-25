@@ -1,5 +1,5 @@
-extern int CurrentRangesWithCount[][3];
+#include <stdio.h>
 
-int CurrentRangeUpdate (int* CurrentValues, int samples);
-int* Sort_CurrentValues(int* CurrentValues, int samples);
-void PrintonConsole(int CurrentRange_Count);
+
+ int checkRange(int LowLimit, int HighLimit,int samplesno, int* Samples);
+ int checkRangelimit(int LowLimit, int HighLimit, int index, int* Samples);
