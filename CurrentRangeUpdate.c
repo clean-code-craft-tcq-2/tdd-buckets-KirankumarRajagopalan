@@ -7,9 +7,8 @@ int CurrentRangeUpdate (int* CurrentValues, int samples){
     int CurrentRange_Count = 0;
     int CurrentRange_prev = 0, CurrentRange_curr = 0;
     int* CurrentValues_sorted;
-
+    
     CurrentValues_sorted = Sort_CurrentValues(CurrentValues, samples);
-
     for(int i =0; i<samples; i++){
         CurrentRange_curr = *(CurrentValues_sorted+i);
         if((CurrentRange_curr == CurrentRange_prev) || 
@@ -30,7 +29,6 @@ int CurrentRangeUpdate (int* CurrentValues, int samples){
     PrintonConsole(CurrentRange_Count);
     return CurrentRange_Count;
 }
-
 int* Sort_CurrentValues(int* CurrentValues, int samples){
     int temp;
 
@@ -48,7 +46,6 @@ int* Sort_CurrentValues(int* CurrentValues, int samples){
     }
     return CurrentValues;
 }
-
 void PrintonConsole(int CurrentRange_Count){
     printf("***********************************\n");
     printf("Current values range count = %d\n", CurrentRange_Count);
