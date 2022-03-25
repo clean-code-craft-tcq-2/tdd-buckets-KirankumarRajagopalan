@@ -1,6 +1,6 @@
 #define CATCH_CONFIG_MAIN  // This tells Catch to provide a main() - only do this in one cpp file
 
-#include "test/catch.hpp"
+#include "catch.hpp"
 #include "CurrentRangeUpdate.h"
 
 TEST_CASE("Checks if number of ranges is updated with single continuous range of current values") {
